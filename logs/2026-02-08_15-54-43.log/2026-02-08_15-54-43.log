@@ -1,0 +1,2 @@
+[2026-02-08 15:54:44,061] 161 numexpr.utils - INFO - NumExpr defaulting to 16 threads.
+[2026-02-08 15:55:36,762] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"

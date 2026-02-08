@@ -1,0 +1,2 @@
+[2026-02-08 15:49:37,430] 161 numexpr.utils - INFO - NumExpr defaulting to 16 threads.
+[2026-02-08 15:51:42,876] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 504 Gateway Time-out"
