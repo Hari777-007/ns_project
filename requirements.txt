@@ -4,6 +4,7 @@ pandas
 pymongo[srv]
 pymongo
 certifi
-scikit-learn    
+scikit-learn
+pyaml     
 
 ##-e .
