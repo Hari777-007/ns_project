@@ -1,0 +1,7 @@
+[2026-02-09 13:00:23,988] 161 numexpr.utils - INFO - NumExpr defaulting to 16 threads.
+[2026-02-09 13:01:12,934] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-02-09 13:01:13,024] 107 dagshub - INFO - Accessing as Hari777-007
+[2026-02-09 13:01:18,028] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Hari777-007/ns_project "HTTP/1.1 200 OK"
+[2026-02-09 13:01:23,124] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-02-09 13:01:23,429] 107 dagshub - INFO - Initialized MLflow to track repo "Hari777-007/ns_project"
+[2026-02-09 13:01:23,628] 107 dagshub - INFO - Repository Hari777-007/ns_project initialized!
