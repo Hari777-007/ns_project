@@ -28,7 +28,12 @@ load_dotenv()
 
 import mlflow
 import dagshub
-dagshub.init(repo_owner='Hari777-007', repo_name='ns_project', mlflow=True, token=os.getenv("dags_hub_token"))
+mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
+mlflow.set_experiment("NetworkSecurity")
+
+
+
+dagshub.init(repo_owner='Hari777-007', repo_name='ns_project', mlflow=True, token=os.getenv("DAGSHUB_TOKEN"))
 
 
 
