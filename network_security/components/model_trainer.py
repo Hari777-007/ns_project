@@ -28,13 +28,16 @@ load_dotenv()
 
 import mlflow
 import dagshub
-mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
-mlflow.set_experiment("NetworkSecurity")
+os.environ["DAGSHUB_TOKEN"] = "ff80413f6fcd12f9d66454fe0f1e8887b2d5ff15"
+os.environ["MLFLOW_TRACKING_URI"] = "https://dagshub.com/Hari777-007/ns_project.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"] = "Hari777-007"
+os.environ["MLFLOW_TRACKING_PASSWORD"] = "ff80413f6fcd12f9d66454fe0f1e8887b2d5ff15"
 
 
+dagshub.init(repo_owner='Hari777-007', repo_name='ns_project', mlflow=True)
 
-dagshub.init(repo_owner='Hari777-007', repo_name='ns_project', mlflow=True, token=os.getenv("DAGSHUB_TOKEN"))
-
+mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
+mlflow.set_experiment("NetworkSecurity") 
 
 
 
