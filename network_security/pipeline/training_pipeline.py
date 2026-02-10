@@ -23,15 +23,16 @@ from network_security.entity.artifact_entity import (
     DataTransformationArtifact,
     ModelTrainerArtifact,
 )
-from networksecurity.constant.training_pipeline import TRAINING_BUCKET_NAME
-from networksecurity.cloud.s3_syncer import S3Sync
-from networksecurity.constant.training_pipeline import SAVED_MODEL_DIR
+from network_security.constant.training_pipeline import TRAINING_BUCKET_NAME
+from network_security.cloud.s3_syncer import S3Sync
+from network_security.constant.training_pipeline import SAVED_MODEL_DIR
 import sys
 
 
 class TrainingPipeline:
     def __init__(self):
         self.training_pipeline_config=TrainingPipelineConfig()
+        self.s3_sync = S3Sync()
         
 
     def start_data_ingestion(self):
