@@ -23,10 +23,12 @@ from sklearn.ensemble import (
     GradientBoostingClassifier,
     RandomForestClassifier,
 )
+from dotenv import load_dotenv
+load_dotenv()
 
 import mlflow
 import dagshub
-#dagshub.init(repo_owner='Hari777-007', repo_name='ns_project', mlflow=True)
+dagshub.init(repo_owner='Hari777-007', repo_name='ns_project', mlflow=True, token=os.getenv("dags_hub_token"))
 
 
 

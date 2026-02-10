@@ -9,6 +9,7 @@ pyaml
 dagshub
 mlflow
 fastapi
-uvicorn     
+uvicorn
+python-multipart     
 
 ##-e .
